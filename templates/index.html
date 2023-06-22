@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Prompt Tester</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="column-wrapper">
+            <div id="variable-buttons">
+                <button id="add-variable">+ Variable</button>
+                <button id="remove-variable">- Variable</button>
+            </div>
+            <div class="column" id="variable">
+            </div>
+        </div>
+        <div class="column" id="prompts">
+            <div class="prompt">
+                <textarea id="prompt-input-1" class="prompt-input" placeholder="Enter your prompt"></textarea>
+            </div>
+        </div>
+        <div class="column" id="responses">
+            <div class="response">
+                <textarea id="response-output-1" class="response-output" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="buttons">
+        <button id="add-prompt">+</button>
+        <button id="remove-prompt">-</button>
+        <button id="generate">Generate</button>
+        <button id="export">Export</button>
+    </div>
+</body>
+</html>
